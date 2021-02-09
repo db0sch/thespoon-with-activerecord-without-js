@@ -1,0 +1,9 @@
+<h1><%= @restaurant.name %></h1>
+
+<p>Rating: <%= "⭐️" * @restaurant.rating %> </p>
+
+<p>Address: <%= @restaurant.address %> </p>
+
+<%= link_to("Edit", edit_restaurant_path(@restaurant)) %>
+<%= link_to("Back to restaurants", restaurants_path) %>
+<%= link_to("Delete", restaurant_path(@restaurant), method: :delete) %>
